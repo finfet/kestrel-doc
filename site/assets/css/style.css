@@ -1,0 +1,175 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 1em;
+}
+
+a {
+    color: #990000;
+}
+
+a:visited {
+    color: #943126;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+thead tr {
+    border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+pre {
+    border-radius: 5px;
+    overflow-x: auto;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+code {
+    background-color: #f8f9fa;
+    overflow-x: auto;
+    font-family: "IBM Plex Mono", monospace;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+pre > code {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: inherit;
+    border: none;
+}
+
+details > summary {
+    cursor: pointer;
+}
+
+.table-responsive {
+    overflow-x: scroll;
+}
+
+.term-prompt::before {
+    content: "$"
+}
+
+.container {
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+    height: 120px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 260px;
+    height: 50px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    min-height: calc(100vh - 145px);
+}
+
+.primary-button {
+    width: 120px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    background-color: #990000;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+a.primary-button {
+    color: white;
+}
+
+a.primary-button:visited {
+    color: white;
+}
+
+.secondary-button {
+    width: 120px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+a.secondary-button {
+    color: black;
+}
+
+a.secondary-button:visited {
+    color: black;
+}
+

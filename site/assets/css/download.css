@@ -1,0 +1,50 @@
+
+.container {
+    max-width: 768px;
+}
+
+ul.primary-download {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-download li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.download-button {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.release-table {
+    padding-top: 40px;
+}
+
+.filename {
+    min-width: 300px;
+}
+
+.install-instructions {
+    padding-top: 40px;
+}
+
+.install-instructions > details {
+    padding-bottom: 10px;
+}
+
+.getting-started {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .primary-download li {
+        display: block;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    width: 320px;
+}
+
+.container {
+    width: 360px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.tagline {
+    padding-top: 5px;
+    flex: 1;
+}
+
+.action-button {
+    flex: 1;
+}
+
+.blurb {
+    padding-bottom: 40px;
+}
+
+.call-to-action {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contribute {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .call-to-action {
+        flex-direction: column;
+    }
+
+    .primary-button {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+}

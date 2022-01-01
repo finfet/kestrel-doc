@@ -1,0 +1,13 @@
+[book]
+authors = ["Kyle Schreiber"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Kestrel Documentation"
+
+[build]
+build-dir = "static/docs"
+
+[output.html]
+preferred-dark-theme = "ayu"
+site-url = "/docs/"

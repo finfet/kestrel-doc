@@ -29,12 +29,24 @@ ul.primary-download {
     min-width: 300px;
 }
 
-.install-instructions {
+.install-container {
     padding-top: 40px;
 }
 
-.install-instructions > details {
-    padding-bottom: 10px;
+.install-instruction {
+    padding-bottom: 5px;
+}
+
+.install-content code::before {
+    content: "$ "
+}
+
+.install-content {
+    padding-top: 5px;
+}
+
+.install-content p {
+    padding-top: 10px;
 }
 
 .getting-started {

@@ -19,7 +19,7 @@
                 <h2>Latest Release</h2>
                 <h4>Release v0.9.0</h4>
                 <ul class="primary-download">
-                    <li><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-x86_64.tar.gz" class="download-button">Linux</a></li>
+                    <li><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-amd64.tar.gz" class="download-button">Linux</a></li>
                     <li><a href="/releases/v0.9.0/kestrel-macos-v0.9.0-universal.tar.gz" class="download-button">macOS</a></li>
                     <li><a href="/releases/v0.9.0/kestrel-cli-setup-v0.9.0-x64.exe" class="download-button">Windows</a></li>
                 </ul>
@@ -40,15 +40,15 @@
                                 <td class="filename"><a href="/releases/v0.9.0/kestrel-source-v0.9.0.tar.gz">kestrel-source-v0.9.0.tar.gz</a></td>
                                 <td>Source</td>
                                 <td></td>
-                                <td>Universal2</td>
+                                <td></td>
                                 <td>12MB</td>
                                 <td>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</td>
                             </tr>
                             <tr>
-                                <td class="filename"><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-x86_64.tar.gz">kestrel-linux-v0.9.0-x86_64.tar.gz</a></td>
+                                <td class="filename"><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-amd64.tar.gz">kestrel-linux-v0.9.0-amd64.tar.gz</a></td>
                                 <td>Archive</td>
                                 <td>Linux</td>
-                                <td>x86_64</td>
+                                <td>amd64</td>
                                 <td>500KB</td>
                                 <td>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</td>
                             </tr>
@@ -58,35 +58,40 @@
                 <p style="padding-top: 20px;">
                     <a href="/releases/">View all releases</a>
                 </p>
-                <div class="install-instructions">
+                <div class="install-container">
                     <h2>Installation Instructions</h2>
-                    <details>
-                        <summary>Linux</summary>
-                        <ol>
-                            <li>
-                                <div>Extract the binary and place it somewhere on your PATH.</div>
-                                <pre><code>tar -xf kestrel-linux-v0.9.0-x86_64.tar.gz -C /usr/local/bin kestrel</code></pre>
-                                <div>Note: The example will likely require sudo</div>
-                            </li>
-                        </ol>
+
+                    <details class="install-instruction">
+                        <summary><span style="font-weight: bold;">Linux</span></summary>
+                        <div class="install-content">
+                            <p>
+                                Extract the binary
+                                <pre><code>tar -xf kestrel-linux-v0.9.0-amd64.tar.gz kestrel</code></pre>
+                            </p>
+                            <p>
+                                Place it somewhere on your PATH
+                                <pre><code>sudo cp kestrel /usr/local/bin/</code></pre>
+                            </p>
+                        </div>
                     </details>
-                    <details>
-                        <summary>macOS</summary>
-                        <ol>
-                            <li>
-                                <div>Extract the binary and place it somewhere on your PATH.</div>
-                                <pre><code>tar -xf kestrel-linux-v0.9.0-x86_64.tar.gz -C /usr/local/bin kestrel</code></pre>
-                                <div>Note: The example will likely require sudo</div>
-                            </li>
-                        </ol>
+                    <details class="install-instruction">
+                        <summary><span style="font-weight: bold;">macOS</span></summary>
+                        <div class="install-content">
+                            <p>
+                                Extract the binary
+                                <pre><code>tar -xf kestrel-macos-v0.9.0-universal.tar.gz kestrel</code></pre>
+                            </p>
+                            <p>
+                                Place it somewhere on your PATH
+                                <pre><code>sudo cp kestrel /usr/local/bin/</code></pre>
+                            </p>
+                        </div>
                     </details>
-                    <details>
-                        <summary>Windows</summary>
-                        <ol>
-                            <li>
-                                <p>Follow the instructions on the installer. When using the portable archive, run the binary from anywhere or add it to your PATH.</p>
-                            </li>
-                        </ol>
+                    <details class="install-instruction">
+                        <summary><span style="font-weight: bold;">Windows</span></summary>
+                        <div class="install-content">
+                            <p>Follow the instructions on the installer. When using the portable archive, the binary can be run from anywhere or added to your PATH.</p>
+                        </div>
                     </details>
                 </div>
                 <div class="getting-started">

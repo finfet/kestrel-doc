@@ -45,7 +45,7 @@ table {
     border-spacing: 0;
     table-layout: auto;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 th, td {
@@ -61,37 +61,27 @@ tbody tr:nth-child(even) {
     background-color: #e9ecef;
 }
 
-pre {
-    border-radius: 5px;
-    overflow-x: auto;
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
-}
-
 code {
-    background-color: #f8f9fa;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: inherit;
+}
+
+pre code {
+    display: block;
+    background: #eee;
+    white-space: pre;
     overflow-x: auto;
-    font-family: "IBM Plex Mono", monospace;
-    padding-top: 1px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 1px;
+    max-width: 100%;
+    padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ced4da;
 }
 
-pre > code {
-    font-family: "IBM Plex Mono", monospace;
-    background-color: inherit;
-    border: none;
-}
-
-details > summary {
+details summary {
     cursor: pointer;
 }
 
 .table-responsive {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .term-prompt::before {

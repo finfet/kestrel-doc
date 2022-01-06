@@ -12,7 +12,7 @@ are split into encrypted and authenticated chunks.
 Users can also use a password instead of public keys. This password is used
 with scrypt to derive a symmetric key for file encryption.
 
-## Public Key Based Encryption
+## Public Key Encryption
 
 The X pattern of a noise protocol handshake is used to perform public key
 authenticated encryption between sender and recipient.
@@ -102,7 +102,7 @@ compromised, even at a later date, this payload can be decrypted. This message
 can also be replayed, since there's no ephemeral contribution from the
 recipient.
 
-## Password Based Encryption
+## Password Encryption
 
 Scrypt is used to derive a symmetric key from a password which is then used
 with the chunked file encryption format.

@@ -9,9 +9,8 @@ ul.primary-download {
     padding: 0;
 }
 
-.primary-download li {
-    display: inline-block;
-    padding-right: 10px;
+ul.primary-download li {
+    padding-bottom: 5px;
 }
 
 .download-button {

@@ -2,12 +2,12 @@
 
 ## Overview
 
-Kestrel uses a standard combination of the Noise Protocol and a
+Kestrel uses a simple combination of the Noise Protocol and a
 chunked file encryption scheme.
 
 The noise protocol (Noise_X_25519_ChaChaPoly_SHA256) is used to encrypt a
-payload key that is then used for ChaCha20-Poly1305 file encryption. Files
-are split into encrypted and authenticated chunks.
+payload key. This payload key then used for ChaCha20-Poly1305 file encryption.
+Files are split into encrypted and authenticated chunks.
 
 Users can also use a password instead of public keys. This password is used
 with scrypt to derive a symmetric key for file encryption.
@@ -28,26 +28,27 @@ legitimate copy of your public key.
    payload key.
 2. A noise handshake is performed between the sender and recipient with the
    payload key included as the noise payload. The result is a noise handshake
-   message that includes the encrypted payload key and encrypted sender public
-   key.
+   message that includes the encrypted payload key and the encrypted sender
+   public key.
 3. The plaintext is encrypted using the payload key and the chunked encryption
    format.
 
 **Decryption**
 
-1. The recipient must choose to decrypt using the key that the sender chose as
-   the recipient. Because the ciphertext contains no identifying information
-   from either the sender or recipient, the recipient must choose the right key
-   pair from which to attempt decryption. If the recipient has, for example,
-   a work key pair, and a personal key pair, the recipient must know to decrypt
-   with either the work key or the personal key. Obviously decryption could be
-   attempted with both keys if the recipient is unsure.
+1. The recipient must choose to decrypt using the same key that the sender
+   chose as the recipient key. Because the ciphertext contains no identifying
+   information from either the sender or recipient, the recipient must choose
+   the correct key pair from which to attempt decryption. If the recipient has,
+   for example, a work key pair, and a personal key pair, the recipient must
+   know to decrypt with either the work key or the personal key. Obviously
+   decryption could be attempted with both keys if the recipient is unsure.
 2. The recipient decrypts the noise handshake message. If successful, this
-   results in the payload key and the sender's public key.
+   results in the decrypted payload key and sender's public key.
 3. The ciphertext is decrypted using the payload key and the chunked
-   encryption format.
+   encryption format. The sender's public key is displayed upon successful
+   decryption.
 
-### Chunked Encryption
+### Chunked File Encryption
 
 Files can be dozens of gigabytes in size and don't fit into memory. So they are
 split into encrypted and authenticated chunks. Each chunk has a chunk number

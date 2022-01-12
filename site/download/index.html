@@ -19,59 +19,49 @@
                 <h2>Latest Release</h2>
                 <h4>Release v0.9.0</h4>
                 <ul class="primary-download">
-                    <li><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-amd64.tar.gz">Linux (amd64)</a></li>
-                    <li><a href="/releases/v0.9.0/kestrel-macos-v0.9.0-arm64.tar.gz">macOS (arm64)</a></li>
-                    <li><a href="/releases/v0.9.0/kestrel-cli-setup-v0.9.0-x64.exe">Windows Installer</a></li>
-                    <li><a href="/releases/v0.9.0/kestrel-source-v0.9.0.tar.gz">Source</a></li>
-                    <li><a href="/releases/v0.9.0/SHA256SUMS.txt">SHA-256 Checksums</a></li>
+                    <li>
+                        Linux
+                        <ul>
+                            <li><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-amd64.tar.gz">Linux (x86-64)</a></li>
+                        <li><a href="/releases/v0.9.0/kestrel-linux-v0.9.0-arm64.tar.gz">Linux (arm64)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        macOS
+                        <ul>
+                            <li><a href="/releases/v0.9.0/kestrel-macos-v0.9.0-amd64.tar.gz">macOS (Intel)</a></li>
+                            <li><a href="/releases/v0.9.0/kestrel-macos-v0.9.0-arm64.tar.gz">macOS (Apple Silicon)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Windows
+                        <ul>
+                            <li><a href="/releases/v0.9.0/kestrel-cli-setup-v0.9.0-x64.exe">Windows Installer (x64)</a></li>
+                            <li><a href="/releases/v0.9.0/kestrel-windows-v0.9.0-x64.zip">Windows Portable (x64)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Source
+                        <ul>
+                            <li><a href="/releases/v0.9.0/kestrel-source-v0.9.0.tar.gz">Source Code</a></li>
+                            <li><a href="/releases/v0.9.0/SHA256SUMS.txt">SHA-256 Checksums</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <p style="padding-top: 20px;">
-                    <a href="/releases/v0.9.0/">View all downloads</a>
-                </p>
-                <p style="padding-top: 20px;">
+                <p class="pt-40">
                     <h2>All Releases</h2>
                     <a href="/releases/">View all releases</a>
                 </p>
-                <div class="install-container">
+                <div class="pt-40">
                     <h2>Installation Instructions</h2>
-
-                    <details class="install-instruction">
-                        <summary><span style="font-weight: bold;">Linux</span></summary>
-                        <div class="install-content">
-                            <p>
-                                Extract the archive
-                                <pre><code>tar -xf &lt;package-name&gt;.tar.gz</code></pre>
-                            </p>
-                            <p>
-                                Place the binary somewhere on your PATH
-                                <pre><code>sudo cp kestrel /usr/local/bin/</code></pre>
-                            </p>
-                        </div>
-                    </details>
-                    <details class="install-instruction">
-                        <summary><span style="font-weight: bold;">macOS</span></summary>
-                        <div class="install-content">
-                            <p>
-                                Extract the archive
-                                <pre><code>tar -xf &lt;package-name&gt;.tar.gz</code></pre>
-                            </p>
-                            <p>
-                                Place the binary somewhere on your PATH
-                                <pre><code>sudo cp kestrel /usr/local/bin/</code></pre>
-                            </p>
-                        </div>
-                    </details>
-                    <details class="install-instruction">
-                        <summary><span style="font-weight: bold;">Windows</span></summary>
-                        <div class="install-content">
-                            <p>Follow the instructions on the installer. When using the portable archive, the binary can be run from anywhere or added to your PATH.</p>
-                        </div>
-                    </details>
+                    <p>
+                        <a href="/docs/installation.html">Installation Instructions</a>
+                    </p>
                 </div>
-                <div class="getting-started">
+                <div class="pt-40 pb-40">
                     <h2>Getting Started</h2>
                     <p>
-                        Read more in the <a href="/docs/">documentation</a>
+                        <a href="/docs/getting-started.html">Getting Started</a>
                     </p>
                 </div>
             </main>

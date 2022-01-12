@@ -163,7 +163,7 @@ OPTIONS:
     -v, --version   Print version information.
 ```
 
-# Security Guarantees
+## Security Guarantees
 
 If decryption of a file is successful, you know for certain that the file
 hasn't been tampered with and that it came from a specific known key.

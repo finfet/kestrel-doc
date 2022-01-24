@@ -31,9 +31,15 @@ Extract the archive. (Replace with the name of your archive)
 tar -xf kestrel-macos-v0.9.0-arm64.tar.gz
 ```
 
-Put the binary somewhere on your PATH
+You may need to remove the macOS quarantine attribute that is added to files
+downloaded from the internet.
 ```
 cd kestrel-macos-v0.9.0-arm64
+xattr -d com.apple.quarantine kestrel
+```
+
+Put the binary somewhere on your PATH
+```
 sudo cp kestrel /usr/local/bin/
 ```
 
@@ -42,13 +48,16 @@ sudo cp kestrel /usr/local/bin/
 
 ### Windows Installer
 
-Follow the instructions on the installer. By default kestrel will be added
-to your user path. Kestrel can then be used from powershell or command prompt
+Follow the instructions on the installer. You may need to click through the
+SmartScreen warning.
+
+After installation, Kestrel can be used from powershell or command prompt
 using the command `kestrel`.
 
 ### Portable Install
 
-Unzip the archive. `kestrel.exe` can be run from any location you would like.
+Unzip the archive. `kestrel.exe` can be run from any location that you
+would like.
 
 
 ## SHA-256 Checksums

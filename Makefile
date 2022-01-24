@@ -8,4 +8,4 @@ build:
 deploy: build
 	rsync -a static/ ${KESTREL_DOC_LOCATION}
 
-.PHONY: all build publish
+.PHONY: all build deploy

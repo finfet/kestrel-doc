@@ -1,0 +1,23 @@
+.container {
+    max-width: 768px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+ul > ul {
+    list-style-type: none;
+}
+
+h2 + p {
+    padding-bottom: 1.5rem;
+}
+
+p:last-child {
+    padding-bottom: 3rem;
+}

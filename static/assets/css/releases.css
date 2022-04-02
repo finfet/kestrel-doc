@@ -1,0 +1,23 @@
+.container {
+    max-width: 768px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding-bottom: 5px;
+}
+
+p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+main h3:last-of-type {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

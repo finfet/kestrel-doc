@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block description %}{{ config.description }}{% endblock description %}
+
+{% block css %}
+<link rel="stylesheet" href="/assets/css/landing.css">
+{% endblock css %}
+
+{% block content %}
+<p class="blurb">Kestrel is a command-line file encryption application that lets you encrypt files to anyone with a public key.</p>
+<div class="call-to-action">
+    <div class="action-button"><a href="/docs/" class="secondary-button">Docs</a></div>
+    <div class="action-button"><a href="/download/" class="primary-button">Download</a></div>
+</div>
+<div class="contribute">
+    <h3>Contributing</h3>
+    <p>Kestrel is free and open-source software.</p>
+    <p style="padding-top: 10px;">View the <a href="https://github.com/finfet/kestrel">Git Repo</a></p>
+</div>
+{% endblock content %}

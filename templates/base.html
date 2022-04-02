@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{% block description %}{% endblock description %}">
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="/assets/css/fonts.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        {% block css %}
+        {% endblock %}
+        <link rel="icon" type="image/png" href="/assets/images/kestrel-icon-96x.png" sizes="96x96">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo"><a href="/"><img src="/assets/images/kestrel-logo.svg" alt="Kestrel Logo" width="255" height="48"></a></div>
+                <h3 class="tagline">File encryption done right</h3>
+            </header>
+            <main>
+                {% block content %}
+                {% endblock content %}
+            </main>
+        </div>
+    </body>
+</html>

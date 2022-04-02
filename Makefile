@@ -1,11 +1,11 @@
 all: build
 
 build:
-	rsync -a site/ static/
-	rsync -a ../releases static/
+	rsync -a --delete ../releases static/
+	zola build
 	mdbook build
 
 deploy: build
-	rsync -a static/ ${KESTREL_DOC_LOCATION}
+	rsync -avz --delete public/ ${KESTREL_DOC_LOCATION}
 
 .PHONY: all build deploy

@@ -4,8 +4,9 @@ build:
 	rsync -a --delete ../releases static/
 	zola build
 	mdbook build
+	tar -czvf public.tar.gz public
 
-deploy: build
-	rsync -avz --delete public/ ${KESTREL_DOC_LOCATION}
+clean:
+	rm -rf public public.tar.gz
 
-.PHONY: all build deploy
+.PHONY: all build clean

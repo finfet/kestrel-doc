@@ -1,7 +1,7 @@
 all: build
 
 build:
-	rsync -a --delete ../releases static/
+	rsync -a --delete ../kestrel-releases/ static/releases/
 	zola build
 	mdbook build
 	tar -czvf public.tar.gz public

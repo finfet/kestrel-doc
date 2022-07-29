@@ -5,8 +5,8 @@ template = "download.html"
 page_template = "download.html"
 +++
 
-## Latest Release
-#### Release v0.9.0
+# Latest Release
+### v0.9.0
 
 Linux
 

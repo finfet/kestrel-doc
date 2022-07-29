@@ -1,12 +1,14 @@
-all: build
+all: download build
 
 build:
-	rsync -a --delete ../kestrel-releases/ static/releases/
 	zola build
 	mdbook build
 	tar -czvf public.tar.gz public
 
+download:
+	wget -i releases.txt -x -nH -P static/releases
+
 clean:
 	rm -rf public public.tar.gz
 
-.PHONY: all build clean
+.PHONY: all build download clean

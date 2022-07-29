@@ -1,0 +1,8 @@
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-cli-setup-v0.9.0-x64.exe
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-linux-v0.9.0-amd64.tar.gz
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-linux-v0.9.0-arm64.tar.gz
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-macos-v0.9.0-amd64.tar.gz
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-macos-v0.9.0-arm64.tar.gz
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-source-v0.9.0.tar.gz
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/kestrel-windows-v0.9.0-x64.zip
+https://kestrel-assets.s3.us-west-2.amazonaws.com/v0.9.0/SHA256SUMS.txt

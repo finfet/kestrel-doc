@@ -9,5 +9,74 @@
 {% endblock css %}
 
 {% block content %}
-{{ page.content | safe }}
+<h2>Latest Release</h2>
+<h3>Release v0.10.0</h3>
+<ul class="dl-list">
+    <li>
+        <!-- Linux .deb amd64 -->
+        <a href="/releases/v0.10.0/kestrel_0.10.0-1_amd64.deb" class="btn">
+            <img src="/assets/images/debian.svg" class="dl-logo" alt="Debian"><span class="dl-logo-text">.deb (amd64)</span>
+        </a>
+    </li>
+    <li>
+        <!-- Linux .rpm amd64 -->
+        <a href="/releases/v0.10.0/kestrel-0.10.0-1.fc36.x86_64.rpm" class="btn">
+            <img src="/assets/images/fedora.svg" class="dl-logo" alt="Fedora"><span class="dl-logo-text">.rpm (amd64)</span>
+        </a>
+    </li>
+    <li class="pt-responsive">
+        <!-- Linux amd64 binary -->
+        <a href="/releases/v0.10.0/kestrel-linux-v0.10.0-amd64.tar.gz" class="btn">
+            <img src="/assets/images/tux.svg" class="dl-logo" alt="Linux"><span class="dl-logo-text">.tar.gz (amd64)</span>
+        </a>
+    </li>
+</ul>
+<ul class="dl-list pt-2">
+    <li>
+        <!-- Windows Installer -->
+        <a href="/releases/v0.10.0/kestrel-cli-setup-v0.10.0-x64.exe" class="btn">
+            <img src="/assets/images/windows.svg" class="dl-logo" alt="Windows"><span class="dl-logo-text">.exe (x64)</span>
+        </a>
+    </li>
+    <li>
+        <!-- Windows Portable -->
+        <a href="/releases/v0.10.0/kestrel-windows-v0.10.0-x64.zip" class="btn">
+            <img src="/assets/images/windows.svg" class="dl-logo" alt="Windows"><span class="dl-logo-text">.zip (x64)</span>
+        </a>
+    </li>
+</ul>
+<ul class="dl-list pt-2">
+    <li>
+        <!-- Source Code -->
+        <a href="/releases/v0.10.0/kestrel-0.10.0.tar.gz" class="btn">
+            <img src="/assets/images/code.svg" class="dl-logo" alt="Source Code"><span class="dl-logo-text">Source Code</span>
+        </a>
+    </li>
+    <li>
+        <!-- SHA256SUMS -->
+        <a href="/releases/v0.10.0/SHA256SUMS.txt" class="btn">
+            <img src="/assets/images/code.svg" class="dl-logo" alt="Checksums"><span class="dl-logo-text">SHA256SUMS</span>
+        </a>
+    </li>
+</ul>
+<ul class="dl-list pt-2">
+    <!-- macOS Homebrew -->
+    <li>
+        <a class="btn link-disabled" aria-disabled="true">
+            <img src="/assets/images/apple.svg" class="dl-logo" alt="macOS"><span class="dl-logo-text">Homebrew</span>
+        </a>
+    </li>
+    <li>
+        <p><code>brew tap finfet/kestrel</code><br><code>brew install kestrel-cli</code></p>
+    </li>
+</ul>
+<h4 class="pt-2">
+    <a href="/releases/">Additional downloads</a>
+</h4>
+<h2 class="pt-2">Installation</h2>
+<ul class="info">
+    <li><a href="/docs/installation.html">Installation</a></li>
+    <li><a href="/docs/getting-started.html">Getting Started</a></li>
+</ul>
+
 {% endblock content %}

@@ -29,7 +29,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 a {
@@ -37,7 +37,7 @@ a {
 }
 
 a:visited {
-    color: #943126;
+    color: #990000;
 }
 
 table {
@@ -92,6 +92,7 @@ details summary {
     padding-right: 10px;
     padding-bottom: 10px;
     font-family: "IBM Plex Sans", sans-serif;
+    max-width: 768px;
 }
 
 header {
@@ -169,4 +170,3 @@ a.secondary-button {
 a.secondary-button:visited {
     color: black;
 }
-

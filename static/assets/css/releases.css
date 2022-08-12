@@ -1,11 +1,24 @@
-ul {
+ul:nth-of-type(even) {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-ul li {
+ul:nth-of-type(even) li {
     padding-bottom: 5px;
+}
+
+ul:nth-of-type(odd) {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+}
+
+ul:nth-of-type(odd) li {
+    list-style-position: inside;
+}
+
+ul:last-of-type {
+    padding-bottom: 2rem;
 }
 
 p {
@@ -13,7 +26,12 @@ p {
     padding-bottom: 0.5em;
 }
 
-main h3:last-of-type {
-    padding-top: 1rem;
+h2 {
     padding-bottom: 1rem;
+}
+
+hr {
+    border: 0px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }

@@ -5,22 +5,37 @@ description = "Download a release of Kestrel"
 
 # Releases
 
+## Release v0.10.0
+
+### Changes
+
+- Native .deb, .rpm and homebrew packages.
+- Bash completion and man pages for Linux and macOS.
+- A warning is displayed if an empty password is used.
+- Updated cryptography depdendency version.
+
+### Download
+
+- [kestrel_0.10.0-1_amd64.deb](/releases/v0.10.0/kestrel_0.10.0-1_amd64.deb)
+- [kestrel_0.10.0-1_arm64.deb](/releases/v0.10.0/kestrel_0.10.0-1_arm64.deb)
+- [kestrel-0.10.0-1.fc36.aarch64.rpm](/releases/v0.10.0/kestrel-0.10.0-1.fc36.aarch64.rpm)
+- [kestrel-0.10.0-1.fc36.x86_64.rpm](/releases/v0.10.0/kestrel-0.10.0-1.fc36.x86_64.rpm)
+- [kestrel-0.10.0.tar.gz](/releases/v0.10.0/kestrel-0.10.0.tar.gz)
+- [kestrel-cli-setup-v0.10.0-x64.exe](/releases/v0.10.0/kestrel-cli-setup-v0.10.0-x64.exe)
+- [kestrel-linux-v0.10.0-amd64.tar.gz](/releases/v0.10.0/kestrel-linux-v0.10.0-amd64.tar.gz)
+- [kestrel-linux-v0.10.0-arm64.tar.gz](/releases/v0.10.0/kestrel-linux-v0.10.0-arm64.tar.gz)
+- [kestrel-macos-v0.10.0-amd64.tar.gz](/releases/v0.10.0/kestrel-macos-v0.10.0-amd64.tar.gz)
+- [kestrel-macos-v0.10.0-arm64.tar.gz](/releases/v0.10.0/kestrel-macos-v0.10.0-arm64.tar.gz)
+- [kestrel-windows-v0.10.0-x64.zip](/releases/v0.10.0/kestrel-windows-v0.10.0-x64.zip)
+- [SHA256SUMS.txt](/releases/v0.10.0/SHA256SUMS.txt)
+
+- - - - -
+
 ## Release v0.9.0
 
-### Release Notes
+### Changes
 
-The first release!
-
-Installation: Simply extract the binary and add it to your PATH. The binaries are static and can can be run from anywhere. If you're using the windows installer, follow the standard installer prompts.
-
-
-View the documentation for usage examples.
-
-
-This release is considered feature complete and there aren't expected to be any breaking changes. However, things may still change until a 1.0.0 release. Please submit any feedback or issues that you may encounter.
-
-
-Enjoy!
+- Initial release.
 
 ### Download
 

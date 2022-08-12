@@ -32,7 +32,7 @@ ul.dl-list li {
 .btn {
     display: block;
     height: 48px;
-    width: 160px;
+    min-width: 160px;
     border: 1px solid black;
     border-radius: 5px;
     padding: 2px;

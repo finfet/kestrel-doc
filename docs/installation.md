@@ -13,36 +13,84 @@ Kestrel supports
 
 ## Linux
 
-Extract the archive. (Replace with the name of your archive)
+### Debian / Ubuntu / .deb
+
+Install the .deb package. Example:
 ```
-tar -xf kestrel-linux-v0.9.0-amd64.tar.gz
+sudo apt install ./kestrel_0.10.0-1_amd64.deb
 ```
 
-Put the binary somewhere on your PATH
+Bash completion and man pages are included and automatically installed.
+
+### Uninstall
+
 ```
-cd kestrel-linux-v0.9.0-amd64
+sudo apt remove kestrel
+```
+
+### Fedora / .rpm
+
+Install the .rpm package. Example:
+```
+sudo dnf install ./kestrel-0.10.0-1.fc36.x86_64.rpm
+```
+
+Bash completion and man pages are included and automatically installed.
+
+### Uninstall
+
+```
+sudo dnf remove kestrel
+```
+
+### Static Binary
+
+Extract the `.tar.gz`. The binary can be run from anywhere.
+
+Example to place the binary on your `$PATH`:
+```
 sudo cp kestrel /usr/local/bin
+kestrel --version
 ```
 
 ## macOS
 
-Extract the archive. (Replace with the name of your archive)
+### Homebrew
+
 ```
-tar -xf kestrel-macos-v0.9.0-arm64.tar.gz
+brew tap finfet/kestrel
+brew install kestrel-cli
+kestrel --version
 ```
+
+Bash completion and man pages are included and automatically installed.
+
+### Static binary
+
+Extract the `.tar.gz`. The binary can be run from anywhere.
 
 You may need to remove the macOS quarantine attribute that is added to files
 downloaded from the internet.
 ```
-cd kestrel-macos-v0.9.0-arm64
 xattr -d com.apple.quarantine kestrel
 ```
 
-Put the binary somewhere on your PATH
+Example to place the binary on your `$PATH`:
 ```
 sudo cp kestrel /usr/local/bin/
 ```
 
+### Uninstall
+
+Remove binary
+```
+brew remove kestrel-cli
+```
+
+Uninstall tap
+```
+brew untap finfet/kestrel
+```
 
 ## Windows
 
@@ -69,7 +117,7 @@ The SHA-256 hashes of the release can be found in the file `SHA256SUMS.txt`
 
 **Linux**
 
-Use `sha256sum <archive-name.tar.g>`
+Use `sha256sum <archive-name.tar.gz>`
 
 **macOS**
 

@@ -20,7 +20,6 @@ kestrel key generate -o keyring.txt
 The result is a file that looks like this:
 
 ```
-
 [Key]
 Name = alice
 PublicKey = mI4mKm85lXzbYdHhDW7hX8yWDIuSwRuzjATP/w4mZxwm+Dck
@@ -139,38 +138,6 @@ kestrel password encrypt example.txt
 kestrel password decrypt example.txt.ktl
 ```
 
-## Usage
-
-```
-USAGE:
-    kestrel encrypt FILE -t NAME -f NAME [-o FILE] [-k KEYRING]
-    kestrel decrypt FILE -t NAME [-o FILE] [-k KEYRING]
-    kestrel key generate -o FILE
-    kestrel key change-pass PRIVATE-KEY
-    kestrel key extract-pub PRIVATE-KEY
-    kestrel password encrypt|decrypt FILE [-o FILE]
-
-    Aliases enc, dec, pass, and gen can be used as encrypt, decrypt,
-    password, and generate respectively.
-    Option -k is required unless KESTREL_KEYRING env var is set.
-
-OPTIONS:
-    -t, --to        Recipient key name. Decrypt requires a private key.
-    -f, --from      Sender key name. Must be a private key.
-    -o, --output    Output file name.
-    -k, --keyring   Location of a keyring file.
-    -h, --help      Print help information.
-    -v, --version   Print version information.
-```
-
-## Security Guarantees
-
-If decryption of a file is successful, you know for certain that the file
-hasn't been tampered with and that it came from a specific known key.
-
-See more in [security information](./security-information.md)
-
-
 ## Key Management
 
 Public and private keys are simple Base64 strings. Put your public
@@ -188,3 +155,27 @@ As long as you have access to your private key and the password used to
 unlock it, you'll be able to access your data. However, if you lose access to
 the private key and/or password, you won't be able to decrypt any files sent
 to that key.
+
+You can change the password of a private key
+```
+kestrel key change-pass <BASE64-PRIVATE-KEY>
+```
+
+You can view the public key for a private key
+```
+kestrel key extract-pub <BASE64-PUBLIC-KEY>
+```
+
+## Usage Help
+
+View all of the usage options
+```
+kestrel --help
+```
+
+## Security Guarantees
+
+If decryption of a file is successful, you know for certain that the file
+hasn't been tampered with and that it came from a specific known key.
+
+See more in [security information](./security-information.md)

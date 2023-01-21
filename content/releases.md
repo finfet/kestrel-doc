@@ -3,7 +3,40 @@ title = "Kestrel Releases"
 description = "Download a release of Kestrel"
 +++
 
-# Releases
+# Download Kestrel
+
+## Release v0.10.1
+
+### Changes
+
+- Fixed a crash when running kestrel key
+- Improved cli error message output
+
+### Download
+
+- **[.deb x86_64](/releases/v0.10.1/kestrel_0.10.1-1_amd64.deb)**
+- **[.rpm x86_64](/releases/v0.10.1/kestrel-0.10.1-1.x86_64.rpm)**
+- **[Windows Installer](/releases/v0.10.1/kestrel-cli-setup-v0.10.1-x64.exe)**
+- **[Soruce Code](/releases/v0.10.1/kestrel-0.10.1.tar.gz)**
+- **[SHA256SUMS.txt](/releases/v0.10.1/SHA256SUMS.txt)**
+- [kestrel-0.10.1-1.aarch64.rpm](/releases/v0.10.1/kestrel-0.10.1-1.aarch64.rpm)
+- [kestrel-linux-v0.10.1-amd64.tar.gz](/releases/v0.10.1/kestrel-linux-v0.10.1-amd64.tar.gz)
+- [kestrel-linux-v0.10.1-arm64.tar.gz](/releases/v0.10.1/kestrel-linux-v0.10.1-arm64.tar.gz)
+- [kestrel-macos-v0.10.1-amd64.tar.gz](/releases/v0.10.1/kestrel-macos-v0.10.1-amd64.tar.gz)
+- [kestrel-macos-v0.10.1-arm64.tar.gz](/releases/v0.10.1/kestrel-macos-v0.10.1-arm64.tar.gz)
+- [kestrel-windows-v0.10.1-x64.zip](/releases/v0.10.1/kestrel-windows-v0.10.1-x64.zip)
+- [kestrel_0.10.1-1_arm64.deb](/releases/v0.10.1/kestrel_0.10.1-1_arm64.deb)
+
+**Homebrew**
+
+`brew tap finfet/kestrel`  
+`brew install kestrel-cli`
+
+**Arch Linux**
+
+[AUR](https://aur.archlinux.org/packages/kestrel)
+
+- - - - -
 
 ## Release v0.10.0
 

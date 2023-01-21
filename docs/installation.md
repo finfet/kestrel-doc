@@ -43,6 +43,12 @@ Bash completion and man pages are included and automatically installed.
 sudo dnf remove kestrel
 ```
 
+### Arch Linux
+
+kestrel is available on the [AUR](https://aur.archlinux.org/packages/kestrel)
+
+Follow the normal installation procedure for AUR packages.
+
 ### Static Binary
 
 Extract the `.tar.gz`. The binary can be run from anywhere.

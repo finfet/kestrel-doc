@@ -17,7 +17,7 @@ description = "Download a release of Kestrel"
 - **[.deb x86_64](/releases/v0.10.1/kestrel_0.10.1-1_amd64.deb)**
 - **[.rpm x86_64](/releases/v0.10.1/kestrel-0.10.1-1.x86_64.rpm)**
 - **[Windows Installer](/releases/v0.10.1/kestrel-cli-setup-v0.10.1-x64.exe)**
-- **[Soruce Code](/releases/v0.10.1/kestrel-0.10.1.tar.gz)**
+- **[Source Code](/releases/v0.10.1/kestrel-0.10.1.tar.gz)**
 - **[SHA256SUMS.txt](/releases/v0.10.1/SHA256SUMS.txt)**
 - [kestrel-0.10.1-1.aarch64.rpm](/releases/v0.10.1/kestrel-0.10.1-1.aarch64.rpm)
 - [kestrel-linux-v0.10.1-amd64.tar.gz](/releases/v0.10.1/kestrel-linux-v0.10.1-amd64.tar.gz)

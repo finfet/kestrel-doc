@@ -1,3 +1,10 @@
++++
+title = "Security Information"
+description = "Overview of Kestrel's security properies"
+[extra]
+nav_page = "security-information"
++++
+
 # Security Information
 
 ## Overview
@@ -6,9 +13,9 @@ Kestrel uses a simple combination of the Noise Protocol and a
 chunked file encryption scheme.
 
 The noise protocol (Noise_X_25519_ChaChaPoly_SHA256) is used to encrypt a
-payload key. This payload key is then used for ChaCha20-Poly1305 file encryption.
-Files are split into encrypted and authenticated chunks, ensuring that
-unauthenticated data is never written to disk.
+payload key. This payload key is then used to derived a key for
+ChaCha20-Poly1305 file encryption. Files are split into encrypted and
+authenticated chunks, ensuring that unauthenticated data is never written to disk.
 
 Users can also use a password instead of public keys. This password is used
 with scrypt to derive a symmetric key for file encryption.
@@ -76,8 +83,8 @@ recipient.
    payload key included as the noise payload. The result is a noise handshake
    message that includes the encrypted payload key and the encrypted sender
    public key.
-3. The plaintext is encrypted using the payload key and the chunked encryption
-   format.
+3. The plaintext is encrypted using the chunked encryption format with a key
+   derived from the payload key.
 
 ### Decryption Steps
 
@@ -90,9 +97,9 @@ recipient.
    decryption could be attempted with both keys if the recipient is unsure.
 2. The recipient decrypts the noise handshake message. If successful, this
    results in the decrypted payload key and sender's public key.
-3. The ciphertext is decrypted using the payload key and the chunked
-   encryption format. The sender's public key is displayed upon successful
-   decryption.
+3. The ciphertext is decrypted using the chunked encryption format with a
+   key derived from the payload key. The sender's public key is displayed upon
+   successful decryption.
 
 
 ## Password Encryption

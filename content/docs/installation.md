@@ -1,6 +1,13 @@
++++
+title = "Installation"
+description = "Kestrel installation"
+[extra]
+nav_page = "installation"
++++
+
 # Installation
 
-Download a [release](https://getkestrel.com/releases/)
+Download a [release](@/releases.md)
 
 Pick the file for your operating system.
 

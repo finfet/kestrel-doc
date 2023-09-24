@@ -1,3 +1,10 @@
++++
+title = "Introduction"
+description = "Kestrel documentation"
+[extra]
+nav_page = "introduction"
++++
+
 # Introduction
 
 Kestrel is a command-line file encryption application that makes it easy to
@@ -9,8 +16,8 @@ Supports Linux, macOS, and Windows
 
 ## Installation
 
-[Installation Instructions](./installation.md)
+[Installation Instructions](@/docs/installation.md)
 
 ## Getting Started
 
-[Getting Started Info](./getting-started.md)
+[Getting Started Info](@/docs/getting-started.md)

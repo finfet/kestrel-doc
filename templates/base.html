@@ -23,10 +23,15 @@
                 </div>
                 <h3 class="tagline">File encryption done right</h3>
             </header>
-            <main>
-                {% block content %}
-                {% endblock content %}
-            </main>
+            <div class="content">
+                {% block nav %}
+                {% endblock nav %}
+                <main class="column">
+                    {% block content %}
+                    {% endblock content %}
+                </main>
+            </div>
+            <footer></footer>
         </div>
     </body>
 </html>

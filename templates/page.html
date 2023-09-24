@@ -5,8 +5,23 @@
 {% block description %}{{ page.description }}{% endblock description %}
 
 {% block css %}
-<link rel="stylesheet" href="/assets/css/releases.css">
+{% if page.extra.css_file %}
+<link rel="stylesheet" href="/assets/css/{{ page.extra.css_file }}">
+{% endif %}
 {% endblock css %}
+
+
+{% block nav %}
+<nav class="column">
+    <ul>
+        <li><a href="/docs/">Introduction</a></li>
+        <li><a href="/releases/" {% if page.extra.nav_page == "releases" %}class="bold-link"{% endif %}>Releases</a></li>
+        <li><a href="/docs/installation/" {% if page.extra.nav_page == "installation" %}class="bold-link"{% endif %}>Installation</li>
+        <li><a href="/docs/getting-started/" {% if page.extra.nav_page == "getting-started" %}class="bold-link"{% endif %}>Getting Started</a></li>
+        <li><a href="/docs/security-information/" {% if page.extra.nav_page == "security-information" %}class="bold-link"{% endif %}>Security Information</a></li>
+    </ul>
+</nav>
+{% endblock nav %}
 
 {% block content %}
 {{ page.content | safe }}

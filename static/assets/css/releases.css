@@ -17,10 +17,6 @@ ul:nth-of-type(odd) li {
     list-style-position: inside;
 }
 
-ul:last-of-type {
-    padding-bottom: 2rem;
-}
-
 p {
     padding-top: 0.5em;
     padding-bottom: 0.5em;

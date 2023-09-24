@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block description %}{{ section.description }}{% endblock description %}
+
+{% block nav %}
+<nav class="column">
+    <ul>
+        <li><a href="/docs/" {% if section.extra.nav_page == "introduction" %}class="bold-link"{% endif %}>Introduction</a></li>
+        <li><a href="/releases/">Releases</a></li>
+        <li><a href="/docs/installation/">Installation</li>
+        <li><a href="/docs/getting-started/">Getting Started</a></li>
+        <li><a href="/docs/security-information/">Security Information</a></li>
+    </ul>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}

@@ -1,8 +1,15 @@
++++
+title = "Getting Started"
+description = "Get started with Kestrel"
+[extra]
+nav_page = "getting-started"
++++
+
 # Getting Started
 
 ## Installation
 
-Make sure that you have the application installed. See [installation](./installation.md)
+Make sure that you have the application installed. See [installation](@/docs/installation.md)
 for more.
 
 ## Generate a new key pair
@@ -22,8 +29,8 @@ The result is a file that looks like this:
 ```
 [Key]
 Name = alice
-PublicKey = mI4mKm85lXzbYdHhDW7hX8yWDIuSwRuzjATP/w4mZxwm+Dck
-PrivateKey = AAHr9qFFlOx1ujtQg8bQ8I5GTzwWmBjRU8Cf0VAK2CuRKNNlsW4XWCu2GEzFQuqNb1UrkLev7+Qn9OgS5xwVOR3j
+PublicKey = D7ZZstGYF6okKKEV2rwoUza/tK3iUa8IMY+l5tuirmzzkEog
+PrivateKey = ZWdrMPEp09tKN3rAutCDQTshrNqoh0MLPnEERRCm5KFxvXcTo+s/Sf2ze0fKebVsQilImvLzfIHRcJuX8kGetyAQL1VchvzHR28vFhdKeq+NY2KT
 ```
 
 This is an example key. Do not use this. Make sure to generate
@@ -63,18 +70,23 @@ When encrypting a file, think of it like addressing a letter. The destination
 `--to` is a public key with a name. And the `--from` is the sender's key.
 
 ```
-kestrel encrypt example.txt --to alice --from alice -k keyring.txt
+kestrel encrypt example.txt --to alice --from alice -o example.txt.ktl -k keyring.txt
 ```
 
 This results in a file called `example.txt.ktl` that only Alice can read
 and decrypt.
+
+Kestrel also supports pipes, so you could do something like this:
+```
+cat example.txt | kestrel enc -t alice -f alice > example.txt.ktl -k keyring.txt
+```
 
 ## Decrypt a file
 
 To decrypt Alice uses
 
 ```
-kestrel decrypt example.txt.ktl --to alice -k keyring.txt
+kestrel decrypt example.txt.ktl -t alice -o example.txt -k keyring.txt
 ```
 
 The result is the decrypted example.txt that Alice can view. For the `--to`
@@ -109,7 +121,7 @@ Name can be anything that helps Alice identify Bob.
 
 Now Alice can encrypt a file for Bob using his key.
 ```
-kestrel encrypt example.txt --to bob --from alice -k keyring.txt
+kestrel encrypt example.txt --to bob --from alice -k keyring.txt -o example.txt.ktl
 ```
 
 The result is a file `example.txt.ktl` that only Bob will be able to decrypt.
@@ -131,11 +143,11 @@ of the key file that you would like to use.
 Instead of using Public Keys, you can also encrypt and decrypt files using passwords.
 
 ```
-kestrel password encrypt example.txt
+kestrel password encrypt example.txt -o example.txt.ktl
 ```
 
 ```
-kestrel password decrypt example.txt.ktl
+kestrel password decrypt example.txt.ktl -o example.txt.ktl
 ```
 
 ## Key Management
@@ -178,4 +190,4 @@ kestrel --help
 If decryption of a file is successful, you know for certain that the file
 hasn't been tampered with and that it came from a specific known key.
 
-See more in [security information](./security-information.md)
+See more in [security information](@/docs/security-information.md)

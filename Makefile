@@ -2,7 +2,6 @@ all: download build
 
 build:
 	zola build
-	mdbook build
 	tar -czvf public.tar.gz public
 
 download:

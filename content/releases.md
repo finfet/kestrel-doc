@@ -1,6 +1,9 @@
 +++
 title = "Kestrel Releases"
 description = "Download a release of Kestrel"
+[extra]
+nav_page = "releases"
+css_file = "releases.css"
 +++
 
 # Download Kestrel

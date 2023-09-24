@@ -15,6 +15,10 @@ body {
     line-height: 1.5;
 }
 
+footer {
+    padding-bottom: 2em;
+}
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -28,7 +32,12 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+p {
+    padding: 0.25em 0.25em;
+}
+
 h1, h2, h3, h4, h5, h6 {
+    padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
@@ -85,19 +94,20 @@ details summary {
 }
 
 .container {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 980px;
+    max-width: 100%;
     height: auto;
     margin: auto;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-family: "IBM Plex Sans", sans-serif;
-    max-width: 768px;
+    min-height: 100vh;
 }
 
 header {
     height: 120px;
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,6 +121,10 @@ header {
     flex: 1;
 }
 
+.logo h1 {
+    padding-top: 10px;
+}
+
 .logo a {
     color: black;
     text-decoration: none;
@@ -122,12 +136,32 @@ header {
 }
 
 .tagline {
-    padding-top: 5px;
+    padding-top: 10px;
     flex: 1;
 }
 
+.content {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+
 main {
-    min-height: calc(100vh - 145px);
+    flex: 1;
+    max-width: calc(100% - 12em);
+}
+
+nav {
+    padding-top: 2em;
+    flex: 0 0 12em;
+    max-width: 12em;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
 }
 
 .primary-button {
@@ -169,4 +203,25 @@ a.secondary-button {
 
 a.secondary-button:visited {
     color: black;
+}
+
+a.bold-link {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    main {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    nav {
+        flex: 1;
+        max-width: 100%;
+    }
 }

@@ -5,6 +5,7 @@
 {% block description %}{{ page.description }}{% endblock description %}
 
 {% block css %}
+<link rel="stylesheet" href="/assets/css/docs.css">
 {% if page.extra.css_file %}
 <link rel="stylesheet" href="/assets/css/{{ page.extra.css_file }}">
 {% endif %}
@@ -12,7 +13,7 @@
 
 
 {% block nav %}
-<nav class="column">
+<nav>
     <ul>
         <li><a href="/docs/">Introduction</a></li>
         <li><a href="/releases/" {% if page.extra.nav_page == "releases" %}class="bold-link"{% endif %}>Releases</a></li>

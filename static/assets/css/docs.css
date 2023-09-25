@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+
+main {
+    flex: 1;
+    max-width: calc(100% - 12em);
+}
+
+nav {
+    padding-top: 2em;
+    flex: 0 0 12em;
+    max-width: 12em;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    main {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    nav {
+        flex: 1;
+        max-width: 100%;
+    }
+}

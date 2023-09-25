@@ -4,8 +4,15 @@
 
 {% block description %}{{ section.description }}{% endblock description %}
 
+{% block css %}
+<link rel="stylesheet" href="/assets/css/docs.css">
+{% if section.extra.css_file %}
+<link rel="stylesheet" href="/assets/css/{{ section.extra.css_file }}">
+{% endif %}
+{% endblock css %}
+
 {% block nav %}
-<nav class="column">
+<nav>
     <ul>
         <li><a href="/docs/" {% if section.extra.nav_page == "introduction" %}class="bold-link"{% endif %}>Introduction</a></li>
         <li><a href="/releases/">Releases</a></li>

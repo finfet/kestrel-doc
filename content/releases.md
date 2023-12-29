@@ -8,7 +8,7 @@ css_file = "releases.css"
 
 # Download Kestrel
 
-## Relase v1.0.0
+## Release v1.0.0
 
 28 Dec 23
 

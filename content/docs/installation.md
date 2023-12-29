@@ -24,7 +24,7 @@ Kestrel supports
 
 Install the .deb package. Example:
 ```
-sudo apt install ./kestrel_0.10.0-1_amd64.deb
+sudo apt install ./kestrel_1.0.0-1_amd64.deb
 ```
 
 Bash completion and man pages are included and automatically installed.
@@ -39,7 +39,7 @@ sudo apt remove kestrel
 
 Install the .rpm package. Example:
 ```
-sudo dnf install ./kestrel-0.10.0-1.fc36.x86_64.rpm
+sudo dnf install ./kestrel-1.0.0-1.fc36.x86_64.rpm
 ```
 
 Bash completion and man pages are included and automatically installed.

@@ -1,0 +1,111 @@
+.error {
+    border-left: 4px solid #dc3545;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.warn {
+    border-left: 4px solid #ffc107;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.success {
+    border-left: 4px solid #198754;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.info {
+    border-left: 4px solid #808080;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.ml-3 {
+    margin-left: 1rem;
+}
+
+.ml-4 {
+    margin-left: 1.5rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.pt-1 {
+    padding-top: 0.25rem;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.pt-3 {
+    padding-top: 1rem;
+}
+
+.pt-4 {
+    padding-top: 2rem;
+}
+
+.pt-5 {
+    padding-top: 4rem;
+}
+
+.pb-1 {
+    padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 2rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-mono {
+    font-family: monospace;
+}

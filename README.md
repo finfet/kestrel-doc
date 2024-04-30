@@ -1,4 +1,4 @@
 # Kestrel Documentation Website
 
-Landing page for downloading released and mdbook for documentation.
+Landing page for downloading releases and documentation site.
 

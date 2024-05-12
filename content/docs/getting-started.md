@@ -147,7 +147,7 @@ kestrel password encrypt example.txt -o example.txt.ktl
 ```
 
 ```
-kestrel password decrypt example.txt.ktl -o example.txt.ktl
+kestrel password decrypt example.txt.ktl -o example.txt
 ```
 
 ## Key Management

@@ -8,6 +8,30 @@ css_file = "releases.css"
 
 # Download Kestrel
 
+## Release v1.0.1
+
+13 May 24
+
+### Changes
+
+- Performance improvements. Remove extraneous x25519 operation.
+
+### Download
+
+- **[.deb x86_64](/releases/v1.0.1/kestrel_1.0.1-1_amd64.deb)**
+- **[.rpm x86_64](/releases/v1.0.1/kestrel-1.0.1-1.x86_64.rpm)**
+- **[Windows Installer](/releases/v1.0.1/kestrel-cli-setup-v1.0.1-x64.exe)**
+- **[Source Code](/releases/v1.0.1/kestrel-1.0.1.tar.gz)**
+- **[SHA256SUMS.txt](/releases/v1.0.1/SHA256SUMS.txt)**
+- [kestrel-1.0.1-1.aarch64.rpm](/releases/v1.0.1/kestrel-1.0.1-1.aarch64.rpm)
+- [kestrel-linux-v1.0.1-amd64.tar.gz](/releases/v1.0.1/kestrel-linux-v1.0.1-amd64.tar.gz)
+- [kestrel-linux-v1.0.1-arm64.tar.gz](/releases/v1.0.1/kestrel-linux-v1.0.1-arm64.tar.gz)
+- [kestrel-macos-v1.0.1-amd64.tar.gz](/releases/v1.0.1/kestrel-macos-v1.0.1-amd64.tar.gz)
+- [kestrel-macos-v1.0.1-arm64.tar.gz](/releases/v1.0.1/kestrel-macos-v1.0.1-arm64.tar.gz)
+- [kestrel-windows-v1.0.1-x64.zip](/releases/v1.0.1/kestrel-windows-v1.0.1-x64.zip)
+- [kestrel_1.0.1-1_arm64.deb](/releases/v1.0.1/kestrel_1.0.1-1_arm64.deb)
+
+
 ## Release v1.0.0
 
 28 Dec 23

@@ -5,7 +5,7 @@ build:
 	tar -czvf public.tar.gz public
 
 download:
-	wget -i releases.txt -x -nH -P static/
+	python3 download.py
 
 clean:
 	rm -rf public public.tar.gz static/releases

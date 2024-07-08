@@ -13,12 +13,15 @@ Kestrel uses a simple combination of the Noise Protocol and a
 chunked file encryption scheme.
 
 The noise protocol (Noise_X_25519_ChaChaPoly_SHA256) is used to encrypt a
-payload key. This payload key is then used to derived a key for
-ChaCha20-Poly1305 file encryption. Files are split into encrypted and
-authenticated chunks, ensuring that unauthenticated data is never written to disk.
+payload key. This payload key is then used to derive a key for file encryption.
+The file encryption key is derived using
+HKDF-SHA256(ikm=payload_key, info=noise_handshake_hash). Files are encrypted
+with ChaCha20-Poly1305. Files are split into encrypted and authenticated
+chunks using a chunked file format where chunks cannot be
+re-ordered, modified, removed, duplicated, or truncated.
 
-Users can also use a password instead of public keys. This password is used
-with scrypt to derive a symmetric key for file encryption.
+Users can also use a password instead of public keys. Scrypt is used to derive
+a symmetric key from the password. This key is then used for file encryption.
 
 
 ## Public Key Encryption
@@ -83,8 +86,12 @@ recipient.
    payload key included as the noise payload. The result is a noise handshake
    message that includes the encrypted payload key and the encrypted sender
    public key.
-3. The plaintext is encrypted using the chunked encryption format with a key
-   derived from the payload key.
+3. A file encryption key is derived from the payload key and the noise
+   handshake hash. This key is derived using
+   HKDF-SHA256(ikm=payload_key, info=handshake_hash) in order to bind the
+   payload key to the noise handshake. The plaintext is then split into chunks
+   according to the chunked file format below and encrypted using
+   ChaCha20-Poly1305.
 
 ### Decryption Steps
 
@@ -97,9 +104,9 @@ recipient.
    decryption could be attempted with both keys if the recipient is unsure.
 2. The recipient decrypts the noise handshake message. If successful, this
    results in the decrypted payload key and sender's public key.
-3. The ciphertext is decrypted using the chunked encryption format with a
-   key derived from the payload key. The sender's public key is displayed upon
-   successful decryption.
+3. The ciphertext is decrypted using the chunked encryption format with the
+   file encryption key derived from the payload key. The sender's public key
+   is displayed upon successful decryption.
 
 
 ## Password Encryption

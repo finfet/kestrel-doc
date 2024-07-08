@@ -10,7 +10,7 @@ def download_file(url, shasum, save_path):
         req = Request(
             url=url,
             headers={
-                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0"
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0"
             }
         )
         with urlopen(req) as response:

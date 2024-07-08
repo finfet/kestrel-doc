@@ -1,3 +1,16 @@
+/releases/v1.0.2/SHA256SUMS.txt | a6300fd3b31ef6252cce8de91cd5f1ec89f1a89f635a7da2b8b009d93192a091
+/releases/v1.0.2/kestrel-1.0.2-1.aarch64.rpm | 12b8c44baedbf8ea261e6281e4f200d73acc82365fad54bcdd31734451045516
+/releases/v1.0.2/kestrel-1.0.2-1.x86_64.rpm | 343be9cc2de5e4470c3b9e734a2d6a659c405e46b8b8ef8466a5d1a06d5fbb9e
+/releases/v1.0.2/kestrel-1.0.2.tar.gz | 5dca8a6a95903fa72d959c8308c3758b054f889e5f5a41a0c7766714a58d9d29
+/releases/v1.0.2/kestrel-cli-setup-v1.0.2-x64.exe | 8e668f2c7f3e901be151755d511cfd62380698a81ef2ed842848576da3812f07
+/releases/v1.0.2/kestrel-linux-v1.0.2-amd64.tar.gz | 8ca35dc478042a6b81bfe2b3a8cdf5344b3d5bf34e73ac46fdd7598a3e7e652b
+/releases/v1.0.2/kestrel-linux-v1.0.2-arm64.tar.gz | 02b979b5770b234cf7d2336bc0521f9a7e36409f67aab467726346a3dfc50eaa
+/releases/v1.0.2/kestrel-macos-v1.0.2-amd64.tar.gz | 11f3f4ee7959c99d20d0ae7c580f5d5d1673343ff9ba2727983d04b9f87c24db
+/releases/v1.0.2/kestrel-macos-v1.0.2-arm64.tar.gz | eee360580acb550878fe529787e5604e9b1ff8511ec63e304bb014988124aef8
+/releases/v1.0.2/kestrel-windows-v1.0.2-x64.zip | a4b79be5e88ceb06200fcc46187e120907503ad10765e781c7776deb479d2a62
+/releases/v1.0.2/kestrel_1.0.2-1_amd64.deb | 21a1cc09f3d13dd2d7ddf5abe5983a18cd590693ca83e6d21a55c44fb08b21e4
+/releases/v1.0.2/kestrel_1.0.2-1_arm64.deb | c1d54da185db4ceb3cd041206f6b0dd631836a7050fe8da6591ee4dd3ade52df
+
 /releases/v1.0.1/SHA256SUMS.txt | 60959aab7bc350bdb9d067c358b592eeca8d306e036d688bd986361d17cbdb6c
 /releases/v1.0.1/kestrel-1.0.1-1.aarch64.rpm | 80e3e400e8172b8057c7da816ed703d589a8fb52d0931862b445da9aed52c8ac
 /releases/v1.0.1/kestrel-1.0.1-1.x86_64.rpm | 44f98439e788ed5cc89eba724cde932241989601d4e01906e148462d5240afe4

@@ -28,6 +28,10 @@ main {
     padding-bottom: 25px;
 }
 
+.app-info {
+    padding-bottom: 25px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .call-to-action {

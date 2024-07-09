@@ -9,7 +9,7 @@
 html, body {
     height: 100%;
     font-size: 16px;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "IBM Plex Sans", "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -207,7 +207,7 @@ input[type="file"]::file-selector-button {
     text-overflow: ellipsis;
     color: #000;
     font-size: 16px;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "IBM Plex Sans", "Helvetica", "Arial", sans-serif;
     background: #fff;
     cursor: pointer;
     box-shadow: 4px 4px #808080;
@@ -230,7 +230,7 @@ textarea {
     width: 320px;
     line-height: 1.2;
     border: 2px solid #000;
-    font-family: monospace;
+    font-family: "IBM Plex Mono", monospace;
     resize: none;
 }
 

@@ -144,6 +144,14 @@ The last chunk has an authenticated last chunk indicator signifying that this
 is the last chunk in the message. The chunk number MUST increase sequentially
 and MUST contain only a single last chunk indicator.
 
-This design ensures that chunks in a message CANNOT be re-ordered, modified, removed, duplicated, or truncated.
+This design ensures that chunks in a message CANNOT be re-ordered, modified,
+removed, duplicated, or truncated.
 
 Messages CANNOT be modified or truncated without detection.
+
+## Key Commitment
+
+Kestrel lacks key commitment due to the use of ChaCha20-Poly1305 as its
+AEAD scheme. The result is that there is not a one-to-one relationship
+between a ciphertext and plaintext. It is possible for a single ciphertext
+to decrypt to two different plaintexts under two different keys.
